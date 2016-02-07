@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HallmanacIoc.cs" />
+    <Compile Include="IServiceLocator.cs" />
     <Compile Include="ServiceResolutionException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
