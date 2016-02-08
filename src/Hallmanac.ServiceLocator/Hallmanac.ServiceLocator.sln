@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hallmanac.ServiceLocator.Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hallmanac.ServiceLocator.Ninject", "Hallmanac.ServiceLocator.Ninject\Hallmanac.ServiceLocator.Ninject.csproj", "{5C7D2125-6024-42B4-9B9A-2FBE6E0E35B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hallmanac.ServiceLocator.Ninject.NuGet", "Hallmanac.ServiceLocator.Ninject.NuGet\Hallmanac.ServiceLocator.Ninject.NuGet.csproj", "{70665249-FEEC-4ED0-8B82-0EEBB372DFA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5C7D2125-6024-42B4-9B9A-2FBE6E0E35B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C7D2125-6024-42B4-9B9A-2FBE6E0E35B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C7D2125-6024-42B4-9B9A-2FBE6E0E35B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70665249-FEEC-4ED0-8B82-0EEBB372DFA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70665249-FEEC-4ED0-8B82-0EEBB372DFA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70665249-FEEC-4ED0-8B82-0EEBB372DFA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70665249-FEEC-4ED0-8B82-0EEBB372DFA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
