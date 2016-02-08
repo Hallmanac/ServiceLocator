@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hallmanac.ServiceLocator.Core</name>
+    </assembly>
+    <members>
+        <member name="T:Hallmanac.ServiceLocator.Core.HallmanacIoc">
+            <summary>
+            Class container for managing the IOC container for the application during runtime.
+            </summary>
+        </member>
+        <member name="P:Hallmanac.ServiceLocator.Core.HallmanacIoc.Current">
+            <summary>
+            Static singleton that returns the current IOC container for the application.
+            </summary>
+        </member>
+        <member name="M:Hallmanac.ServiceLocator.Core.HallmanacIoc.SetServiceLocator(System.Func{Hallmanac.ServiceLocator.Core.IServiceLocator})">
+            <summary>
+            Sets the service Locator for the appliction. This is typically called during an application startup process of some kind.
+            </summary>
+        </member>
+        <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.Resolve``1">
+            <summary>
+            Resolves an interface or class to it's concrete implementation.
+            </summary>
+        </member>
+        <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.Resolve``1(System.String)">
+            <summary>
+            Gets a pre-defined instance from the container with the name of the specified key.
+            </summary>
+        </member>
+        <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.Resolve(System.Type)">
+            <summary>
+            Gets an instance of the type specified.
+            </summary>
+        </member>
+        <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.ResolveServices``1">
+            <summary>
+            Gets all available concrete instances of the type.
+            </summary>
+        </member>
+        <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.Register``1(System.Type)">
+            <summary>
+            Registers a binding for the specified interface or type
+            </summary>
+        </member>
+        <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.Register``2">
+            <summary>
+            Registers a binding for the specified interface or type
+            </summary>
+        </member>
+        <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.RegisterNamedType``2(System.String)">
+            <summary>
+            Registers a binding for the specified interface or type with a specified name.
+            </summary>
+        </member>
+        <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.Register(System.String,System.Type)">
+            <summary>
+            Registers a binding for the specified interface or type with a specified name.
+            </summary>
+        </member>
+        <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.Register(System.Type,System.Type)">
+            <summary>
+            Registers a binding for the specified interface or type
+            </summary>
+        </member>
+        <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.RegisterInstance``1(``0)">
+            <summary>
+            Registers a binding for the specified interface or type to a pre-defined instance.
+            </summary>
+        </member>
+        <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.RegisterSingleton``2">
+            <summary>
+            Registers a binding for the specified interface or type to a singleton
+            </summary>
+        </member>
+        <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.RegisterSingleton``1(System.Type)">
+            <summary>
+            Registers a binding for the specified interface or type to a singleton
+            </summary>
+        </member>
+        <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.RegisterSingleton(System.String,System.Type)">
+            <summary>
+            Registers a binding for the specified interface or type to a singleton
+            </summary>
+        </member>
+        <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.Release(System.Object)">
+            <summary>
+            Deactivates and releases the current given instance if it is being managed by the IOC container.
+            </summary>
+        </member>
+        <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.Reset">
+            <summary>
+            Disposes the IOC instance
+            </summary>
+        </member>
+        <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.Inject``1(``0)">
+            <summary>
+            Not too sure what this should do.
+            </summary>
+        </member>
+        <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.TearDown``1(``0)">
+            <summary>
+            Releases the instance out of the IOC container.
+            </summary>
+        </member>
+        <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.Register``1(System.Func{``0})">
+            <summary>
+            Registers a binding for the specified interface or type by running a function 
+            for any kind of implementation logic that needs to be run when registering it to
+            the container.
+            </summary>
+        </member>
+        <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.ResolveWithParameters``1(System.Object[])">
+            <summary>
+            Resolves an instance out of the container by using the given argument Parameters to pass into
+            the constructor. Arguments must match up with what the constructor expects.
+            </summary>
+        </member>
+    </members>
+</doc>

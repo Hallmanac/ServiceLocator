@@ -5,6 +5,16 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hallmanac.ServiceLocator.Core", "Hallmanac.ServiceLocator.Core\Hallmanac.ServiceLocator.Core.csproj", "{AEFD94CB-3D51-4C3B-B7C1-A2C10E77F7C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hallmanac.ServiceLocator.Core.NuGet", "Hallmanac.ServiceLocator.Core.NuGet\Hallmanac.ServiceLocator.Core.NuGet.csproj", "{0451BAEF-DF2E-4B98-8644-94EE9415E389}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hallmanac.ServiceLocator.Ninject", "Hallmanac.ServiceLocator.Ninject\Hallmanac.ServiceLocator.Ninject.csproj", "{5C7D2125-6024-42B4-9B9A-2FBE6E0E35B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hallmanac.ServiceLocator.Ninject.NuGet", "Hallmanac.ServiceLocator.Ninject.NuGet\Hallmanac.ServiceLocator.Ninject.NuGet.csproj", "{70665249-FEEC-4ED0-8B82-0EEBB372DFA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hallmanac.ServiceLocator.Unity", "Hallmanac.ServiceLocator.Unity\Hallmanac.ServiceLocator.Unity.csproj", "{AFF5C720-A3D4-417E-98F2-8C7229514605}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hallmanac.ServiceLocator.Unity.NuGet", "Hallmanac.ServiceLocator.Unity.NuGet\Hallmanac.ServiceLocator.Unity.NuGet.csproj", "{418AAFB9-2652-4EAB-B196-0D7F073AAEDD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +25,26 @@ Global
 		{AEFD94CB-3D51-4C3B-B7C1-A2C10E77F7C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEFD94CB-3D51-4C3B-B7C1-A2C10E77F7C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEFD94CB-3D51-4C3B-B7C1-A2C10E77F7C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C7D2125-6024-42B4-9B9A-2FBE6E0E35B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C7D2125-6024-42B4-9B9A-2FBE6E0E35B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C7D2125-6024-42B4-9B9A-2FBE6E0E35B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C7D2125-6024-42B4-9B9A-2FBE6E0E35B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70665249-FEEC-4ED0-8B82-0EEBB372DFA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70665249-FEEC-4ED0-8B82-0EEBB372DFA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70665249-FEEC-4ED0-8B82-0EEBB372DFA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70665249-FEEC-4ED0-8B82-0EEBB372DFA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFF5C720-A3D4-417E-98F2-8C7229514605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFF5C720-A3D4-417E-98F2-8C7229514605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFF5C720-A3D4-417E-98F2-8C7229514605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFF5C720-A3D4-417E-98F2-8C7229514605}.Release|Any CPU.Build.0 = Release|Any CPU
+		{418AAFB9-2652-4EAB-B196-0D7F073AAEDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{418AAFB9-2652-4EAB-B196-0D7F073AAEDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{418AAFB9-2652-4EAB-B196-0D7F073AAEDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{418AAFB9-2652-4EAB-B196-0D7F073AAEDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
