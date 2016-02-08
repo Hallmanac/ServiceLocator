@@ -27,6 +27,8 @@ namespace Hallmanac.ServiceLocator.Unity
             Container = container;
         }
 
+        public IUnityContainer Container { get; }
+
 
         public T Resolve<T>() where T : class
         {
@@ -187,9 +189,6 @@ namespace Hallmanac.ServiceLocator.Unity
             }
             Container.Teardown(instance);
         }
-
-
-        public IUnityContainer Container { get; }
 
 
         public T Resolve<T>(Type type) where T : class

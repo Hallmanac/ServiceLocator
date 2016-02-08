@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Hallmanac.ServiceLocator.Unity</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>Hallmanac.ServiceLocator.Unity</title>
     <authors>Brian Hall</authors>
     <owners>Hallmanac</owners>
@@ -10,7 +10,7 @@
       Unity implementation of the IServiceLocator interface for the Hallmanac.ServiceLocator.Core library
     </description>
     <releaseNotes>
-      Initial release.
+      Downgraded the minimum .NET framework to 4.5 in order to more backwards compatible with projects using that .net framework.
     </releaseNotes>
     <summary>
     </summary>

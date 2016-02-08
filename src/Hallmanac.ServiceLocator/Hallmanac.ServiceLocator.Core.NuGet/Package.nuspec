@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Hallmanac.ServiceLocator.Core</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>Hallmanac.ServiceLocator.Core</title>
     <authors>Brian Hall</authors>
     <owners>Hallmanac</owners>
@@ -10,6 +10,7 @@
       Small base library for using the Hallmanac.ServiceLocator implementations such as Hallmanac.ServiceLocator.Ninject or Hallmanac.ServiceLocator.UnityIoc
     </description>
     <releaseNotes>
+      Downgraded the minimum .NET framework to 4.5 in order to more backwards compatible with projects using that .net framework.
     </releaseNotes>
     <summary>
       
@@ -21,7 +22,7 @@
     <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
     <copyright>Copyright  2016</copyright>
     <dependencies>
-        <group targetFramework="net40">
+        <group targetFramework="net45">
         </group>
     </dependencies>
     <references></references>
