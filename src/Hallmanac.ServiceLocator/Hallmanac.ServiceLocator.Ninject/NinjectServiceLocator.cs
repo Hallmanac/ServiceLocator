@@ -1,25 +1,22 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 
 using Hallmanac.ServiceLocator.Core;
 
 using Ninject;
+using Ninject.Extensions.Conventions;
 using Ninject.Parameters;
 
 
 namespace Hallmanac.ServiceLocator.Ninject
 {
-    public class NinjectServiceLocator : IServiceLocator
+    public class NinjectServiceLocator : IServiceLocator, TestMe
     {
         public NinjectServiceLocator(IKernel kernel = null)
         {
             Kernel = kernel ?? new StandardKernel();
         }
-
-
-        public IKernel Kernel { get; }
 
 
         public T Resolve<T>() where T : class
@@ -149,6 +146,24 @@ namespace Hallmanac.ServiceLocator.Ninject
         }
 
 
+        public void RegisterTypesAutomatically(Action<object> registrationFunction = null)
+        {
+            if (registrationFunction == null)
+            {
+                Kernel.Bind(x => x.FromThisAssembly()
+                    .SelectAllClasses()
+                    .BindDefaultInterface());
+            }
+            else
+            {
+                registrationFunction(Kernel);
+            }
+        }
+
+
+        public IKernel Kernel { get; }
+
+
         #region --- Dispose implementation ---
 
         private bool _disposed;
@@ -189,5 +204,11 @@ namespace Hallmanac.ServiceLocator.Ninject
         }
 
         #endregion
+    }
+
+
+    public interface TestMe
+    {
+        void RegisterTypesAutomatically(Action<object> registrationFunction = null);
     }
 }
