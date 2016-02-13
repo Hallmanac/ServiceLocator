@@ -83,6 +83,21 @@ namespace Hallmanac.ServiceLocator.Core
 
 
         /// <summary>
+        /// Registers a binding for the specified interface or type by executing a function 
+        /// for any kind of implementation logic that needs to be run when registering it to
+        /// the container.
+        /// </summary>
+        void Register<TInterface>(Func<TInterface> factoryMethod) where TInterface : class;
+
+
+        /// <summary>
+        /// Registers types automatically using reflection. This can be overridden by passing in a custom Action method to allow
+        /// registering of types in a more targeted or custom manner.
+        /// </summary>
+        void RegisterTypesAutomatically(Action<object> registrationFunction = null);
+
+
+        /// <summary>
         /// Registers a binding for the specified interface or type to a pre-defined instance.
         /// </summary>
         void RegisterInstance<TInterface>(TInterface instance) where TInterface : class;
@@ -128,14 +143,6 @@ namespace Hallmanac.ServiceLocator.Core
         /// Releases the instance out of the IOC container.
         /// </summary>
         void TearDown<TService>(TService instance) where TService : class;
-
-
-        /// <summary>
-        /// Registers a binding for the specified interface or type by running a function 
-        /// for any kind of implementation logic that needs to be run when registering it to
-        /// the container.
-        /// </summary>
-        void Register<TInterface>(Func<TInterface> factoryMethod) where TInterface : class;
 
 
         /// <summary>

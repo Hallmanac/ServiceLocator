@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Hallmanac.ServiceLocator.Core</id>
-    <version>1.0.1</version>
+    <version>1.2.0</version>
     <title>Hallmanac.ServiceLocator.Core</title>
     <authors>Brian Hall</authors>
     <owners>Hallmanac</owners>
@@ -10,7 +10,7 @@
       Small base library for using the Hallmanac.ServiceLocator implementations such as Hallmanac.ServiceLocator.Ninject or Hallmanac.ServiceLocator.UnityIoc
     </description>
     <releaseNotes>
-      Downgraded the minimum .NET framework to 4.5 in order to more backwards compatible with projects using that .net framework.
+       Added additional method for allowing the IOC container implementation to register types automatically via interrogating the assembly.
     </releaseNotes>
     <summary>
       

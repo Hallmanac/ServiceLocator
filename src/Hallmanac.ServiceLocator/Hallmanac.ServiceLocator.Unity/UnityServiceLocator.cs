@@ -129,6 +129,22 @@ namespace Hallmanac.ServiceLocator.Unity
         }
 
 
+        public void RegisterTypesAutomatically(Action<object> registrationFunction = null)
+        {
+            if(registrationFunction == null)
+            {
+                Container.RegisterTypes(
+                    AllClasses.FromLoadedAssemblies(),
+                    WithMappings.FromMatchingInterface,
+                    WithName.Default);
+            }
+            else
+            {
+                registrationFunction(Container);
+            }
+        }
+
+
         public void RegisterInstance<TInterface>(TInterface instance) where TInterface : class
         {
             Container.RegisterInstance(instance);
