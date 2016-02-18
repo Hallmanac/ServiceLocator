@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Hallmanac.ServiceLocator.Core</id>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
     <title>Hallmanac.ServiceLocator.Core</title>
     <authors>Brian Hall</authors>
     <owners>Hallmanac</owners>
@@ -10,7 +10,7 @@
       Small base library for using the Hallmanac.ServiceLocator implementations such as Hallmanac.ServiceLocator.Ninject or Hallmanac.ServiceLocator.UnityIoc
     </description>
     <releaseNotes>
-       Added additional method for allowing the IOC container implementation to register types automatically via interrogating the assembly.
+       Releasing 1.2.0 again to make sure the correct DLL file got copied into the NuGet package.
     </releaseNotes>
     <summary>
       

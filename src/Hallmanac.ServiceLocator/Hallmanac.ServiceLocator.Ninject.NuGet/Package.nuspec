@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Hallmanac.ServiceLocator.Ninject</id>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
     <title>Hallmanac.ServiceLocator.Ninject</title>
     <authors>Brian Hall</authors>
     <owners>Hallmanac</owners>
@@ -10,7 +10,7 @@
       Ninject implementation of the IServiceLocator interface for the Hallmanac.ServiceLocator.Core library
     </description>
     <releaseNotes>
-      Implemented additional method for allowing to auto register interfaces and types based on convention. This uses the Ninject.Extensions.Conventions NuGet package.
+      Releasing 1.2.0 again to make sure the correct DLL file got copied into the NuGet package.
     </releaseNotes>
     <summary>
     </summary>
@@ -21,7 +21,7 @@
     <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
     <copyright>Copyright  2016</copyright>
     <dependencies>
-      <dependency id="Hallmanac.ServiceLocator.Core" version="1.0.0"/>
+      <dependency id="Hallmanac.ServiceLocator.Core" version="1.2.1"/>
       <dependency id="Ninject" version="3.2.2.0"/>
       <dependency id="Ninject.Extensions.Conventions" version="3.2.0.0" />
     </dependencies>

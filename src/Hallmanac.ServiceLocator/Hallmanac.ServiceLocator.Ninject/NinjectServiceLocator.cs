@@ -11,7 +11,7 @@ using Ninject.Parameters;
 
 namespace Hallmanac.ServiceLocator.Ninject
 {
-    public class NinjectServiceLocator : IServiceLocator, TestMe
+    public class NinjectServiceLocator : IServiceLocator
     {
         public NinjectServiceLocator(IKernel kernel = null)
         {
@@ -204,11 +204,5 @@ namespace Hallmanac.ServiceLocator.Ninject
         }
 
         #endregion
-    }
-
-
-    public interface TestMe
-    {
-        void RegisterTypesAutomatically(Action<object> registrationFunction = null);
     }
 }

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hallmanac.ServiceLocator.Unity</name>
+    </assembly>
+    <members>
+        <member name="M:Hallmanac.ServiceLocator.Unity.UnityServiceLocator.Dispose">
+            <summary>
+                Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Hallmanac.ServiceLocator.Unity.UnityServiceLocator.Dispose(System.Boolean)">
+            <summary>
+                Pattern for handling multiple calls to Dispose and allowing sub-classes to implment their own dispose pattern that
+                could
+                also include handling any calls to finalize from the GC.
+            </summary>
+            <param name="disposing"></param>
+        </member>
+    </members>
+</doc>
