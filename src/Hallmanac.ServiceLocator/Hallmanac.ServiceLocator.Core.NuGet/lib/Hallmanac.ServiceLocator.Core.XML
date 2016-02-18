@@ -64,6 +64,19 @@
             Registers a binding for the specified interface or type
             </summary>
         </member>
+        <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.Register``1(System.Func{``0})">
+            <summary>
+            Registers a binding for the specified interface or type by executing a function 
+            for any kind of implementation logic that needs to be run when registering it to
+            the container.
+            </summary>
+        </member>
+        <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.RegisterTypesAutomatically(System.Action{System.Object})">
+            <summary>
+            Registers types automatically using reflection. This can be overridden by passing in a custom Action method to allow
+            registering of types in a more targeted or custom manner.
+            </summary>
+        </member>
         <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.RegisterInstance``1(``0)">
             <summary>
             Registers a binding for the specified interface or type to a pre-defined instance.
@@ -102,13 +115,6 @@
         <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.TearDown``1(``0)">
             <summary>
             Releases the instance out of the IOC container.
-            </summary>
-        </member>
-        <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.Register``1(System.Func{``0})">
-            <summary>
-            Registers a binding for the specified interface or type by running a function 
-            for any kind of implementation logic that needs to be run when registering it to
-            the container.
             </summary>
         </member>
         <member name="M:Hallmanac.ServiceLocator.Core.IServiceLocator.ResolveWithParameters``1(System.Object[])">
